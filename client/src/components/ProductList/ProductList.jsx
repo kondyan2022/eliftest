@@ -18,17 +18,25 @@ export function ProductList() {
 
   const AddCart = (id) => {
     setCart((prevValue) => {
-      let flag;
-      const newValue = prevValue.map(({ shop, product, qty }) => {
-        if (shop === activeShop && product === id) {
-          flag = 1;
-          return { shop, product, qty: (qty += 1) };
+      const newValue = prevValue.map(({ shop, products }) => ({
+        shop,
+        products: [...products],
+      }));
+
+      const cartShopItem = newValue.find(({ shop }) => activeShop === shop);
+      if (cartShopItem) {
+        const productItem = cartShopItem.products.find(
+          ({ product }) => product === id
+        );
+        if (productItem) {
+          productItem.qty += 1;
+        } else {
+          cartShopItem.products.push({ product: id, qty: 1 });
         }
-        return { shop, product, qty };
-      });
-      if (!flag) {
-        newValue.push({ shop: activeShop, product: id, qty: 1 });
+        return newValue;
       }
+
+      newValue.push({ shop: activeShop, products: [{ product: id, qty: 1 }] });
       return newValue;
     });
   };

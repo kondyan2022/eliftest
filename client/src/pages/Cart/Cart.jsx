@@ -1,7 +1,10 @@
+import CartList from "../../components/CartList/CartList";
+
 function Cart() {
   return (
     <>
-      <div>Chart</div>
+      <div>Cart</div>
+      <CartList />
     </>
   );
 }
