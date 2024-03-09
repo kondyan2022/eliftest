@@ -1,0 +1,6 @@
+[
+  { "id": "1", "name": "shop", "linkTo": "/" },
+  { "id": "2", "name": "cart", "linkTo": "/cart" },
+  { "id": "3", "name": "history", "linkTo": "/history" },
+  { "id": "4", "name": "coupons", "linkTo": "/coupons" }
+]

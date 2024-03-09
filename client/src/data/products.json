@@ -1,0 +1,38 @@
+[
+  {
+    "shop": "1",
+    "products": [
+      { "id": "1", "name": "Paracetomol 1", "price": 10 },
+      { "id": "2", "name": "Paracetomol 2", "price": 20 },
+      { "id": "3", "name": "Paracetomol 3", "price": 30 },
+      { "id": "4", "name": "Paracetomol 4", "price": 40 },
+      { "id": "5", "name": "Paracetomol 5", "price": 50 },
+      { "id": "6", "name": "Paracetomol 6", "price": 60 }
+    ]
+  },
+  {
+    "shop": "2",
+    "products": [
+      { "id": "1", "name": "Panadol 1", "price": 11 },
+      { "id": "2", "name": "Panadol 2", "price": 21 },
+      { "id": "3", "name": "Panadol 3", "price": 31 }
+    ]
+  },
+  {
+    "shop": "3",
+    "products": [
+      { "id": "1", "name": "Efferalgan 1", "price": 12 },
+      { "id": "2", "name": "Efferalgan 2", "price": 22 },
+      { "id": "3", "name": "Efferalgan 3", "price": 32 }
+    ]
+  },
+  {
+    "shop": "4",
+    "products": [
+      { "id": "1", "name": "Aspirin 1", "price": 13 },
+      { "id": "2", "name": "Aspirin 2", "price": 23 },
+      { "id": "3", "name": "Aspirin 3", "price": 33 },
+      { "id": "4", "name": "Aspirin 4", "price": 43 }
+    ]
+  }
+]
